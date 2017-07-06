@@ -1,0 +1,686 @@
+.section { 
+	text-align: center; font: 50px "Microsoft Yahei";
+    color: #fff;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* 头部样式 */
+.header {
+	width: 100%;
+	height: 10%;
+	background-color: rgba(0, 0, 0,0.4);
+	position: flex;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+}
+.mywarp {
+	width: 90%;
+	height: 100%;
+	position: relative;
+	left: 50%;
+	margin-left: -45%;
+	display: inline-block;
+}
+.my_headportrait {
+	height: 100%;
+	width: 60px;
+	position: relative;
+	left: 0;
+	display: inline-block;
+}
+.my_headportrait a {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	border-radius: 50%;
+	position: relative;
+	top: 50%;
+	margin-top: -30px;
+	 -webkit-transition:  .5s ease-in-out;
+    -moz-transition:  .5s ease-in-out;
+    -ms-transition:  .5s ease-in-out;
+    -o-transition:  .5s ease-in-out;
+    transition:  .5s ease-in-out;
+	background: url("../images/mygithub.png") no-repeat 0 0/cover;
+}
+.my_headportrait a:hover {
+	box-shadow: 2px 2px 20px 3px #ffffff;
+}
+.my_sentence {
+	width: 440px;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	margin-left: -220px;
+	text-align: center;
+} 
+.my_sentence span {
+	height: 100%;
+	line-height: 80px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 30px;
+}
+.my_sentence span:nth-child(2) {
+	font-size: 20px;
+	font-weight: normal;
+}
+.mywarp nav {
+	display: inline-block;
+    position: absolute;
+    width: 370px;
+    left:75%;
+    top:45%;
+ }
+.mywarp nav ul {
+	list-style: none;
+}
+.mywarp nav ul li {
+	display: inline;
+    text-align: center;
+}
+.mywarp nav ul li a {
+	display:inline-block;
+    width:70px;
+    height: 20px;
+    font-size: 10px;
+    text-decoration: none;
+    color: #fff;
+    margin:0;
+    padding:0;
+}
+.mywarp nav ul li:last-child {
+    border-top: 2px solid #fff;
+    position: absolute;
+    top:25px;
+    left:0;
+    width:70px;
+    -webkit-transition:  .3s ease-in-out;
+    -moz-transition:  .3s ease-in-out;
+    -ms-transition:  .3s ease-in-out;
+    -o-transition:  .3s ease-in-out;
+    transition:  .3s ease-in-out;
+}
+/* section首页样式 */
+#section1 {
+	position: relative;
+	text-align: center;
+}
+#section1-bg {
+	width: 100%;
+	height: 100%;
+	background: url("../images/background-1.png") no-repeat 0 0/cover;
+	-webkit-transition:  filter 1.2s ease-in-out;
+    -moz-transition:  filter 1.2s ease-in-out;
+    -ms-transition:  filter 1.2s ease-in-out;
+    -o-transition:  filter 1.2s ease-in-out;
+    transition:  filter 1.2s ease-in-out;
+}
+.bg-blur {
+	filter: blur(10px);
+}
+.section1-title {
+	position: absolute;
+	top: 48%;
+	font-size: 60px;
+	opacity: 0;
+    width: 100%;
+     -webkit-transition:  opacity .9s ease-in-out;
+    -moz-transition:  opacity .9s ease-in-out;
+    -ms-transition:  opacity .9s ease-in-out;
+    -o-transition:  opacity .9s ease-in-out;
+    transition:  opacity .9s ease-in-out;
+}
+.section1-text {
+	text-shadow: 1px 3px 10px #000000;
+}
+.section1-text p {
+	position: relative;
+	left: 310px;
+	font-size: 20px;
+}
+/* about me 样式代码 */
+#section2 {
+	text-align: center;
+}
+.section2-warp {
+	width: 70%;
+	height: 60%;
+	margin-top: 150px;
+	display: inline-block;
+	border-radius: 30px; 
+	border: 5px #c0c0c0 solid;
+	position: relative;
+	box-shadow: 2px 2px 30px 5px #c0c0c0;
+}
+.myphoto {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%; 
+	border: 5px #c0c0c0 solid;
+	margin-top: -75px;
+	margin-left: -70px;
+	box-shadow: 2px 2px 40px 4px #c0c0c0;
+	background: url('../images/myphoto.png') no-repeat 0 0/cover;
+	 -webkit-transition:   1.5s ease-in-out;
+    -moz-transition:   1.5s ease-in-out;
+    -ms-transition:   1.5s ease-in-out;
+    -o-transition:   1.5s ease-in-out;
+    transition:   1.5s ease-in-out;
+}
+.myphoto:hover {
+	transform: scale(1.2);
+}
+.section2-list {
+	margin-top: 420px;
+	opacity: 0;
+	 -webkit-transition:   1s ease-in-out;
+    -moz-transition:   1s ease-in-out;
+    -ms-transition:   1s ease-in-out;
+    -o-transition:   1s ease-in-out;
+    transition:   1s ease-in-out;
+}
+.list-ul li {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 0 10px;
+	text-align: center;
+}
+.list-ul li .icon-warp {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	position: relative;
+	left: 50%;
+	margin-left: -60px; 
+	box-sizing: border-box;
+}
+.list-ul li .icon-warp .icon {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	margin-top: 30px;
+	margin-left: -30px; 
+	 -webkit-transition:  all .9s ease-in-out;
+    -moz-transition:  all .9s ease-in-out;
+    -ms-transition:  all .9s ease-in-out;
+    -o-transition:  all .9s ease-in-out;
+    transition:  all .9s ease-in-out;
+}
+.list-ul li:nth-child(1) .icon-warp .icon {
+	background: url('../images/age.png') no-repeat 0 0/cover;
+}
+.list-ul li:nth-child(2) .icon-warp .icon {
+	background: url('../images/study.png') no-repeat 0 0/cover;
+}
+.list-ul li:nth-child(3) .icon-warp .icon {
+	background: url('../images/location.png') no-repeat 0 0/cover;
+}
+.list-ul li:nth-child(4) .icon-warp .icon {
+	background: url('../images/now.png') no-repeat 0 0/cover;
+}
+.list-ul li:nth-child(1) .icon-warp:hover>.icon {
+	transform: scale(1.2);
+}
+.list-ul li:nth-child(2) .icon-warp:hover>.icon {
+	transform: scale(1.2);
+}
+.list-ul li:nth-child(3) .icon-warp:hover>.icon {
+	transform: scale(1.2);
+}
+.list-ul li:nth-child(4) .icon-warp:hover>.icon {
+	transform: scale(1.2);
+}
+.list-ul li span {
+	font-size: 16px;
+	color: #707070;
+	position: absolute;
+	text-align: center;
+	width: 220px;
+	margin-left: -110px;
+	 -webkit-transition:  all .7s ease-in-out;
+    -moz-transition:  all .7s ease-in-out;
+    -ms-transition:  all .7s ease-in-out;
+    -o-transition:  all .7s ease-in-out;
+    transition:  all .7s ease-in-out;
+}
+.hoverOn {
+	opacity :0;
+}
+.introduce {
+	width: 700px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	margin-left: -350px;
+	top: -50px;
+}
+.introduce {
+	font-size: 16px;
+	color: #707070;
+}
+#music {
+	position: relative;
+}
+.music-warp {
+	width: 100%;
+	height: 100%;
+	filter: blur(2px);
+	background: url('../images/music.png') no-repeat 0 0/cover;
+}
+.music-text {
+	width: 800px;
+	height: 220px;
+	position: absolute;
+	top: 120px;
+	left: 70px;
+	font-size: 18px;
+	text-align: left;
+}
+.music-text p:first-child{
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.music-text span {
+	margin-top: 10px;
+}
+#line {
+	border-top: 2px #fff solid;
+	width: 228px;
+	position: relative;
+	top: -50px;
+	-webkit-transition:  all .6s ease-in-out;
+    -moz-transition:  all .6s ease-in-out;
+    -ms-transition:  all .6s ease-in-out;
+    -o-transition:  all .6s ease-in-out;
+    transition:  all .6s ease-in-out;
+}
+.music-text span:nth-child(2):hover+#line {
+	width: 705px;
+}
+#music-link a {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background: url('../images/wangyiyunmusic.png') no-repeat 0 0/cover;
+}
+#science-warp {
+	width: 100%;
+	height: 100%;
+	filter: blur(1px);
+	background: url('../images/code.png') no-repeat 0 0/cover;
+}
+.textblack {
+	color: #ffffff;
+}
+#science {
+	position: relative;
+}
+.science-text {
+	width: 800px;
+	height: 220px;
+	position: absolute;
+	top: 120px;
+	left: 70px;
+	font-size: 18px;
+	text-align: left;
+	color: #bfbfbf;
+}
+.science-text p:first-child{
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.science-text span {
+	margin-top: 10px;
+}
+#line-science {
+	border-top: 2px #bfbfbf solid;
+	width: 228px;
+	position: relative;
+	top: -50px;
+	-webkit-transition:  all .6s ease-in-out;
+    -moz-transition:  all .6s ease-in-out;
+    -ms-transition:  all .6s ease-in-out;
+    -o-transition:  all .6s ease-in-out;
+    transition:  all .6s ease-in-out;
+}
+.science-text span:nth-child(2):hover+#line-science {
+	width: 298px;
+}
+/* skill 样式代码 */
+#section3 {
+	text-align: center;
+}
+.section3-warp {
+	width: 80%;
+	height: 75%;
+	margin-top: 70px;
+	display: inline-block;
+}
+.section3-warp p {
+	font-size: 30px;
+	position: relative;
+	left: 0;
+	color: #515151;
+	margin-bottom: 10px;
+}
+.skill-ul {
+	line-height: 0;
+	margin-bottom: 30px;
+}
+.skill-ul li{
+	display: inline-block;
+	margin: 0 35px;
+	position: relative;
+	top: -50px;
+	opacity: 0;
+}
+.li-warp {
+	display: block;
+}
+.skill-ul li .sicon {
+	width: 70px;
+	height: 70px;
+}
+.skill-ul li .sicon-1 {
+	position: relative;
+	z-index: 3;
+}
+.skill-ul li .sicon-2 {
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	-webkit-transition:  all .6s ease-in-out;
+    -moz-transition:  all .6s ease-in-out;
+    -ms-transition:  all .6s ease-in-out;
+    -o-transition:  all .6s ease-in-out;
+    transition:  all .6s ease-in-out;
+}
+.section3-warp span{
+	font-size: 16px;
+	display: inline-block;
+	color: #515151;
+}
+#last-text {
+	margin-top: 55px;
+	position: relative;
+	top: -50px;
+	opacity: 0;
+}
+/* icon 添加图片*/
+#ul-1 li:nth-child(1) .sicon-1 {
+	background: url('../images/icon/html5.png') no-repeat 0 0/cover;
+}
+#ul-1 li:nth-child(2) .sicon-1 {
+	background: url('../images/icon/css3.png') no-repeat 0 0/cover;
+}
+#ul-1 li:nth-child(3) .sicon-1 {
+	background: url('../images/icon/javascript.png') no-repeat 0 0/cover;
+}
+#ul-1 li:nth-child(4) .sicon-1 {
+	background: url('../images/icon/json.png') no-repeat 0 0/cover;
+}
+#ul-1 li:nth-child(5) .sicon-1 {
+	background: url('../images/icon/ajax.png') no-repeat 0 0/cover;
+}
+#ul-1 li:nth-child(6) .sicon-1 {
+	background: url('../images/icon/jquery.png') no-repeat 0 0/cover;
+}
+#ul-1 li:nth-child(7) .sicon-1 {
+	background: url('../images/icon/bootstrap.png') no-repeat 0 0/cover;
+}
+#ul-2 li:nth-child(1) .sicon-1 {
+	background: url('../images/icon/c.png') no-repeat 0 0/cover;
+}
+#ul-2 li:nth-child(2) .sicon-1 {
+	background: url('../images/icon/nodejs.png') no-repeat 0 0/cover;
+}
+#ul-2 li:nth-child(3) .sicon-1 {
+	background: url('../images/icon/responsive.png') no-repeat 0 0/cover;
+}
+#ul-2 li:nth-child(4) .sicon-1 {
+	background: url('../images/icon/git.png') no-repeat 0 0/cover;
+}
+#ul-2 li:nth-child(5) .sicon-1 {
+	background: url('../images/icon/plus.png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(1) .sicon-1 {
+	background: url('../images/icon/photoshop.png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(2) .sicon-1 {
+	background: url('../images/icon/sublime.png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(3) .sicon-1 {
+	background: url('../images/icon/github.png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(4) .sicon-1 {
+	background: url('../images/icon/dreamweaver.png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(5) .sicon-1 {
+	background: url('../images/icon/fireworks.png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(6) .sicon-1 {
+	background: url('../images/icon/visualstudio.png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(7) .sicon-1 {
+	background: url('../images/icon/plus.png') no-repeat 0 0/cover;
+}
+/* icon 底层图片 */
+#ul-1 li:nth-child(1) .sicon-2 {
+	background: url('../images/icon/html5(1).png') no-repeat 0 0/cover;
+}
+#ul-1 li:nth-child(2) .sicon-2 {
+	background: url('../images/icon/css3(1).png') no-repeat 0 0/cover;
+}
+#ul-1 li:nth-child(3) .sicon-2 {
+	background: url('../images/icon/javascript(1).png') no-repeat 0 0/cover;
+}
+#ul-1 li:nth-child(4) .sicon-2 {
+	background: url('../images/icon/json(1).png') no-repeat 0 0/cover;
+}
+#ul-1 li:nth-child(5) .sicon-2 {
+	background: url('../images/icon/ajax(1).png') no-repeat 0 0/cover;
+}
+#ul-1 li:nth-child(6) .sicon-2 {
+	background: url('../images/icon/jquery(1).png') no-repeat 0 0/cover;
+}
+#ul-1 li:nth-child(7) .sicon-2 {
+	background: url('../images/icon/bootstrap(1).png') no-repeat 0 0/cover;
+}
+#ul-2 li:nth-child(1) .sicon-2 {
+	background: url('../images/icon/c(1).png') no-repeat 0 0/cover;
+}
+#ul-2 li:nth-child(2) .sicon-2 {
+	background: url('../images/icon/nodejs(1).png') no-repeat 0 0/cover;
+}
+#ul-2 li:nth-child(3) .sicon-2 {
+	background: url('../images/icon/responsive(1).png') no-repeat 0 0/cover;
+}
+#ul-2 li:nth-child(4) .sicon-2 {
+	background: url('../images/icon/git(1).png') no-repeat 0 0/cover;
+}
+#ul-2 li:nth-child(5) .sicon-2 {
+	background: url('../images/icon/plus(1).png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(1) .sicon-2 {
+	background: url('../images/icon/photoshop(1).png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(2) .sicon-2 {
+	background: url('../images/icon/sublime(1).png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(3) .sicon-2 {
+	background: url('../images/icon/github(1).png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(4) .sicon-2 {
+	background: url('../images/icon/dreamweaver(1).png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(5) .sicon-2 {
+	background: url('../images/icon/fireworks(1).png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(6) .sicon-2 {
+	background: url('../images/icon/visualstudio(1).png') no-repeat 0 0/cover;
+}
+#ul-3 li:nth-child(7) .sicon-2 {
+	background: url('../images/icon/plus(1).png') no-repeat 0 0/cover;
+}
+/* future plan样式代码 */
+.section4-warp {
+	width: 100%;
+	height: 100%;
+	background: url('../images/up.png') no-repeat 0 0/cover;
+	font-size: 30px;
+}
+.battery-warp {
+	width: 50px;
+	height: 22px;
+	position: absolute;
+	top: 240px;
+	left: 180px;
+}
+.battery{
+    width: 40px;
+    height: 20px;
+    border: 1px #fff solid;
+    border-radius: 2px;
+    margin: 0 auto;
+    position: relative;
+    -webkit-animation: charge 5s linear infinite;
+    -moz-animation: charge 5s linear infinite;
+    animation: charge 5s linear infinite;
+   
+}
+.battery:after{
+    width: 3px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 0px 1px 1px 0px;
+    position: absolute;
+    content: "";
+    top: 5px;
+    right: -4px;
+}
+@-webkit-keyframes charge{
+    0%{box-shadow: inset 0px 0px 0px #fff;}
+    100%{box-shadow: inset 42px 0px 0px #fff;}
+}
+@-moz-keyframes charge{
+    0%{box-shadow: inset 0px 0px 0px #fff;}
+    100%{box-shadow: inset 42px 0px 0px #fff;}
+}
+@keyframes charge{
+    0%{box-shadow: inset 0px 0px 0px #fff;}
+    100%{box-shadow: inset 42px 0px 0px #fff;}
+}
+.section4-warp>p {
+	padding-top: 140px;
+	padding-bottom: 55px;
+}
+.skill-plan {
+	font-size: 26px;	
+}
+.skill-plan div {
+	margin-bottom: 20px;
+}
+.skill-plan p {
+	margin-bottom: 30px;
+}
+.skill-plan span {
+	font-size: 45px;
+	margin-top: 50px;
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition:  all 1.2s ease-in;
+    -moz-transition:  all 1.2s ease-in;
+    -ms-transition:  all 1.2s ease-in;
+    -o-transition:  all 1.2s ease-in;
+    transition:  all 1.2s ease-in;
+}
+/* contact me 样式代码 */
+.section5-warp {
+	width: 100%;
+	height: 100%;
+	background: url('../images/contact.png') no-repeat 0 0/cover;
+}
+.section5-warp p {
+	font-size: 20px;
+	padding-top: 230px;
+	position: relative;
+	top: 130px;
+	opacity: 0;
+	-webkit-transition:  all 1.2s ease-in;
+    -moz-transition:  all .6s ease-in;
+    -ms-transition:  all .6s ease-in;
+    -o-transition:  all .6s ease-in;
+    transition:  all .6s ease-in;
+}
+.section5-warp .contact-ul {
+	text-align: center;
+	margin-top: 200px;
+}
+.section5-warp .contact-ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+.section5-warp .contact-ul li .conicon {
+	width: 70px;
+	height: 70px;
+}
+.section5-warp .contact-ul li a {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: red;
+	-webkit-transition:  all .6s ease-in-out;
+    -moz-transition:  all .6s ease-in-out;
+    -ms-transition:  all .6s ease-in-out;
+    -o-transition:  all .6s ease-in-out;
+    transition:  all .6s ease-in-out;
+}
+.section5-warp .contact-ul li:nth-child(1) a{
+	background: url('../images/icon2/weibo(1).png') no-repeat 0 0/cover;
+}
+.section5-warp .contact-ul li:nth-child(2) a{
+	background: url('../images/icon2/email(1).png') no-repeat 0 0/cover;
+}
+.section5-warp .contact-ul li:nth-child(3) a{
+	background: url('../images/icon2/qq(1).png') no-repeat 0 0/cover;
+}
+.section5-warp .contact-ul li:nth-child(4) a{
+	background: url('../images/icon2/github(1).png') no-repeat 0 0/cover;
+}
+.section5-warp .contact-ul li:nth-child(5) a{
+	background: url('../images/icon2/blog(1).png') no-repeat 0 0/cover;
+}
+.section5-warp .contact-ul li:nth-child(1) a:hover{
+	background: url('../images/icon2/weibo.png') no-repeat 0 0/cover;
+}
+.section5-warp .contact-ul li:nth-child(2) a:hover{
+	background: url('../images/icon2/email.png') no-repeat 0 0/cover;
+}
+.section5-warp .contact-ul li:nth-child(3) a:hover{
+	background: url('../images/icon2/qq.png') no-repeat 0 0/cover;
+}
+.section5-warp .contact-ul li:nth-child(4) a:hover{
+	background: url('../images/icon2/github.png') no-repeat 0 0/cover;
+}
+.section5-warp .contact-ul li:nth-child(5) a:hover{
+	background: url('../images/icon2/blog.png') no-repeat 0 0/cover;
+}
